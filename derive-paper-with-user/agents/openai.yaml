@@ -1,0 +1,7 @@
+interface:
+  display_name: "与用户共创论文推导"
+  short_description: "逐段拆分论文推导，与用户讨论确认后再写入正式推导文档"
+  default_prompt: "使用 $derive-paper-with-user 先读取本地资料并生成推导地图草案，不要直接写推导正文；等我确认地图后，再从 Part 1 开始逐段讨论，只有我明确批准后才写入推导文档。"
+
+policy:
+  allow_implicit_invocation: true
