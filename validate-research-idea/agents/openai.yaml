@@ -1,0 +1,6 @@
+interface:
+  display_name: "验：最短验证路径"
+  short_description: "把研究创新点加工为可执行、可追踪、可复盘的最短验证闭环"
+  default_prompt: "Use $validate-research-idea to turn my research idea into a testable claim and run its shortest validation loop."
+policy:
+  allow_implicit_invocation: false
