@@ -7,7 +7,7 @@
 | 层级 | Skills | 处理 |
 | --- | --- | --- |
 | 核心 | `grilling`, `domain-modeling` | 启动时检查；缺失即提醒安装并停止 |
-| 推荐 | `grill-with-docs` | 建议安装；它是用户调用型包装器，本 Skill 不自动调用 |
+| 可选 | `grill-with-docs` | 用户手动进入文档化追问的快捷包装器；不是本 Skill 的运行时依赖 |
 | 条件 | `research`, `wayfinder`, `handoff` | 分支真正需要时再检查并提醒，不阻塞普通启动 |
 | 下游 | `validate-research-idea` | 缺失不影响完成交接包，但必须说明后续验证入口不存在 |
 
@@ -25,7 +25,7 @@ npx skills@latest add mattpocock/skills
 
 ## 2. 默认协作内核
 
-- 使用 `grilling` 处理会改变方向、边界、评价标准或路线的决定；一次只问一个，给推荐和理由。
+- 组合运行 `grilling` 与 `domain-modeling`：前者逐个处理会改变方向、边界、评价标准或路线的决定，后者在决定确认时维护长期领域语言。
 - 能从用户材料、仓库和可信来源查到的事实由 Agent 先查，避免把可查事实变成用户问卷。
 - 研究者决定值得解决什么、什么结果有意义、愿意承担什么主张，以及兴趣和现实约束如何取舍。
 - Agent 承担可规模化、可追溯、可逆的信息处理：检索迭代、逐篇记录、批次比较、来源追踪和一致性检查。
@@ -33,9 +33,9 @@ npx skills@latest add mattpocock/skills
 
 三个固定决策门只标记方向或任务确认、候选选择和交接确认，不限制其他沟通。
 
-## 3. 何时使用 domain-modeling
+## 3. domain-modeling 的内容边界
 
-当讨论形成会长期复用的术语、研究边界、成功含义或领域决定时，调用 `domain-modeling` 并遵循当前项目的 domain docs 配置及时更新。以下内容不写入领域文档：
+`SKILL.md` 第 1 步是“确认决定—更新领域文档—继续追问”闭环的唯一详细所有者。本节只界定运行状态与长期领域语言：已确认且会复用的术语、研究边界和成功含义属于领域文档；以下内容属于运行状态：
 
 - 当前批次进度；
 - 等待回传；
@@ -43,7 +43,7 @@ npx skills@latest add mattpocock/skills
 - 本轮检索式；
 - 尚未确认的 Agent 推断。
 
-这些运行状态留在 `STATUS.md` 或对应研究工件中。若用户希望用 `$grill-with-docs` 统一完成深度追问和文档更新，提醒其自行调用；本 Skill 不能自动调用另一个用户调用型 Skill。
+这些运行状态留在 `STATUS.md` 或对应研究工件中。Matt 的 `$grill-with-docs` 保留为用户手动快捷入口；本 Skill 直接组合其 `grilling` 和 `domain-modeling` 语义，因此不受包装器调用策略或版本差异影响。
 
 ## 4. 条件分支
 

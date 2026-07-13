@@ -38,7 +38,7 @@
 | 主模式/少数信号双通道与去向 | [训] 人工审阅动机；[Agent] 记录结构 | `LITERATURE-ANALYSIS.md` |
 | 主视角生成—对照视角审查 | [训] 生成视角；[Agent] 对照审查 | `CANDIDATE-VIEWS.md` |
 | 三个固定决策门与一次一个决定 | [Agent] `grilling` 适配 | `SKILL.md` |
-| 术语和长期边界进入领域文档 | [Agent] `domain-modeling` 适配 | `COLLABORATION.md` |
+| 确认的术语和长期边界在下一次追问前进入领域文档 | [Agent] `grilling` + `domain-modeling` 适配 | `SKILL.md` |
 | 最小状态、单一事实源、唯一阻塞前沿 | [Agent] 工程资产生命周期适配 | `SKILL.md`、`COLLABORATION.md` |
 | 数据库接力检索—检索回传包 | [Agent] 受限访问适配 | `SEARCH.md` |
 | 选题交接包、全文门与交接状态 | [原] 选题到“验”的边界；[Agent] 交接契约 | `HANDOFF.md` |
