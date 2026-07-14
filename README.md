@@ -1,6 +1,6 @@
 # 个人科研工作流 Skills
 
-这是一个面向 Codex 的个人科研工作流 Skill 仓库，包含论文推导共创、研究构想发展、迭代检索、手写笔记转 Markdown、执行规格整理、论文审查和研究构想验证等能力。
+这是一个面向 Codex 的个人科研工作流 Skill 仓库，包含论文推导共创、研究构想发展、迭代检索、手写笔记转 Markdown、执行规格整理、论文审查、研究构想验证和科研内容传播等能力。
 
 参考的是国家杰青钟老师的[科研论内容]([《科研论》首页](https://www.keyanlun.com/))。搜聚分验合五步法，后续补充合。
 
@@ -13,6 +13,7 @@
 | `develop-research-idea` | 【搜聚分】基于真实文献和证据池发展研究候选 |
 | `fishing-search` | 【搜.钓鱼法】将模糊主题转化为反馈驱动的迭代搜索 |
 | `handwritten-notes-to-markdown` | 将手写笔记和公式图片转写为 Markdown |
+| `research-to-xiaohongshu` | 将真实科研材料与 Skill 转化为可信、可搜索、可迭代的小红书图文笔记包 |
 | `to-execution-spec` | 将对话、草稿或计划整理为执行规格 |
 | `validate-research-idea` | 【验】为研究创新点设计最短验证闭环 |
 
@@ -24,6 +25,7 @@
 
 ```text
 使用 $fishing-search 帮我把这个模糊主题变成可执行的文献检索循环。
+使用 $research-to-xiaohongshu 把这次真实科研复盘整理成一套小红书图文笔记包。
 使用 $to-execution-spec 将刚才的讨论保存为执行规格。
 ```
 
