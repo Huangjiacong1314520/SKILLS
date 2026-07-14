@@ -6,13 +6,13 @@
 
 | Skill | 用途 |
 | --- | --- |
-| `checklist` | 对论文手稿与证据进行结构化审查 |
+| `checklist` | 【checklist】对论文手稿与证据进行结构化审查 |
 | `derive-paper-with-user` | 与用户分段讨论、确认并共创论文推导 |
-| `develop-research-idea` | 基于真实文献和证据池发展研究候选 |
-| `fishing-search` | 将模糊主题转化为反馈驱动的迭代搜索 |
+| `develop-research-idea` | 【搜聚分】基于真实文献和证据池发展研究候选 |
+| `fishing-search` | 【搜.钓鱼法】将模糊主题转化为反馈驱动的迭代搜索 |
 | `handwritten-notes-to-markdown` | 将手写笔记和公式图片转写为 Markdown |
 | `to-execution-spec` | 将对话、草稿或计划整理为执行规格 |
-| `validate-research-idea` | 为研究创新点设计最短验证闭环 |
+| `validate-research-idea` | 【验】为研究创新点设计最短验证闭环 |
 
 ## 兼容性与安装
 
