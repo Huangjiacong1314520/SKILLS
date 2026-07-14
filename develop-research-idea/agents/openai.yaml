@@ -1,6 +1,7 @@
 interface:
-  display_name: "Develop Research Idea"
-  short_description: "从文献与方向形成有来源支撑的研究 idea 和初步研究方案"
-  default_prompt: "Use $develop-research-idea to turn my current direction or literature pool into a sourced research idea and preliminary plan."
+  display_name: "发展研究构想"
+  short_description: "基于真实文献检索、证据池与关系分析形成可追溯研究候选"
+  default_prompt: "使用 $develop-research-idea，基于真实文献检索、证据池和关系分析形成可追溯的研究候选。"
+
 policy:
   allow_implicit_invocation: false
