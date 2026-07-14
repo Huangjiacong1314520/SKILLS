@@ -12,7 +12,7 @@
 
 ## V0｜先检查依赖和边界
 
-每次运行先完成 SKILL.md 中的 Matt Skills 预检。依赖缺失时给出安装地址和命令 `npx skills@latest add mattpocock/skills`，停止验证。项目尚未配置 issue tracker 与 domain docs 时，要求用户先调用 `$setup-matt-pocock-skills`。
+每次运行先完成 SKILL.md 中的可选增强预检。增强 Skill 缺失时，不停止基础验证；应记录缺失项并跳过对应增强步骤。只有用户明确要求安装外部 Skill 时，才给出安装地址和命令 `npx skills@latest add mattpocock/skills`。项目尚未配置 issue tracker 与 domain docs 时，先说明限制，再使用当前对话和用户提供材料完成能完成的验证。
 
 `AI Research/【验】` 一类材料只能支持“如何验”的方法论；具体创新点的科学主张、参数和阈值必须来自用户材料、原始数据、领域文献、官方文档或可检查代码。
 

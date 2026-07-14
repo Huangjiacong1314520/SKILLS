@@ -1,0 +1,7 @@
+interface:
+  display_name: "整理执行规格"
+  short_description: "把讨论和计划整理为可执行规格"
+  default_prompt: "使用 $to-execution-spec 将当前讨论整理为一份实现就绪的 Markdown 执行规格。"
+
+policy:
+  allow_implicit_invocation: true

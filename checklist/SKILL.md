@@ -1,7 +1,6 @@
 ---
 name: checklist
-description: 手动执行科研论文手稿与证据审查。
-disable-model-invocation: true
+description: 手动执行科研论文手稿、论证结构、证据闭环、作者意图重建和期刊规范审查。Use when 用户明确要求审查论文手稿、检查论证与证据、执行科研写作 checklist，或希望逐项审计而不是普通润色。
 ---
 
 # Checklist
@@ -50,4 +49,3 @@ disable-model-invocation: true
 不要给论文总分，不增加严重程度等级，不把无法核验写成通过。
 
 完成条件：`GUIDE.md` 的每个规则均被标为适用并给出状态，或明确说明不适用；所有未检查内容都有原因；所有发现都有可复查位置；没有疑点被写成确认错误。
-
