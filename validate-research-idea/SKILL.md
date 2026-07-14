@@ -1,6 +1,6 @@
 ---
 name: validate-research-idea
-description: 把研究创新点转化为可执行、可追踪的最短验证闭环。
+description: 把研究创新点、研究假设或候选机制转化为可执行、可追踪、可复盘的最短验证闭环，并优先识别可能使项目夭折的生死问题。Use when 用户要求验证研究想法、寻找最短证伪路径、设计早期实验或形成可继续、修改或放弃的决策依据。
 ---
 
 # 验：最短验证路径
@@ -11,9 +11,9 @@ description: 把研究创新点转化为可执行、可追踪的最短验证闭�
 
 开始任何工作前，完整读取 [`GUIDE.md`](GUIDE.md) 至 EOF。只有追溯规则来源时读取 [`COVERAGE.md`](COVERAGE.md)；只有需要跨领域迁移实例时读取 [`references/CASES.md`](references/CASES.md)；只有核对原句与来源边界时读取 [`references/source/CORE-EXCERPTS.md`](references/source/CORE-EXCERPTS.md)。
 
-检查当前环境是否提供以下 Matt Skills：`setup-matt-pocock-skills`、`grill-with-docs`、`grilling`、`domain-modeling`、`wayfinder`、`research`、`prototype`、`diagnosing-bugs`、`handoff`。任一缺失时停止，提示用户先从 `https://github.com/mattpocock/skills` 安装，并在目标项目中运行 `$setup-matt-pocock-skills`，然后重新调用本 Skill。
+检查当前环境是否提供以下可选增强 Skill：`setup-matt-pocock-skills`、`grill-with-docs`、`grilling`、`domain-modeling`、`wayfinder`、`research`、`prototype`、`diagnosing-bugs`、`handoff`。若存在则按需使用；若缺失，不要停止验证，改用当前 Skill 的内置流程，并在结果中注明哪些增强步骤未执行。只有用户明确要求安装这些 Skill 时，才提示其参考 `https://github.com/mattpocock/skills`。
 
-完成条件：依赖齐全，目标项目的 issue tracker 与 domain docs 已配置，`GUIDE.md` 已完整读取。
+完成条件：`GUIDE.md` 已完整读取，并已根据当前环境记录可用的增强 Skill、issue tracker 与 domain docs；缺失项不阻断基础验证，但必须在验证记录中标明。
 
 ## 1. 恢复或建立状态
 

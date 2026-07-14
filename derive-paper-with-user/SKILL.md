@@ -13,9 +13,9 @@ description: 与用户分段共创严谨的论文推导文档，采用“先讨�
 
 `derive-paper-with-user` 是交互式逐段推导模式。用户强调“一点点推导”“先讨论”“确认满意后再写入”“不要一次生成大文件”时，优先使用本 skill。
 
-`control-paper-tutor` 是完整教学稿生成和推导审阅模式。用户要求一次性生成完整推导教学 Markdown，或要求审阅已有 Markdown/LaTeX 推导时，优先使用 `control-paper-tutor`。
+如果环境另外安装了 `control-paper-tutor`，它可作为完整教学稿生成和推导审阅的可选增强。用户要求一次性生成完整推导教学 Markdown，或要求审阅已有 Markdown/LaTeX 推导时，可以转交该 Skill；未安装时，继续使用本 Skill 完成分段讨论和人工审阅，不应因此停止。
 
-二者不是替代关系，而是工作模式不同：本 skill 控制节奏和验收边界，`control-paper-tutor` 适合完整稿件生成和严格审阅。
+二者不是替代关系，而是工作模式不同：本 skill 控制节奏和验收边界，`control-paper-tutor`（如已安装）适合完整稿件生成和严格审阅。
 
 默认行为：
 

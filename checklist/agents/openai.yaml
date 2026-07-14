@@ -1,0 +1,7 @@
+interface:
+  display_name: "科研论文审查清单"
+  short_description: "逐项审查论文论证、证据与规范"
+  default_prompt: "使用 $checklist 对这份论文手稿执行结构化证据与论证审查。"
+
+policy:
+  allow_implicit_invocation: false

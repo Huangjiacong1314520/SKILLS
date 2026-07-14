@@ -1,0 +1,7 @@
+interface:
+  display_name: "手写笔记转 Markdown"
+  short_description: "忠实转写手写笔记与数学推导"
+  default_prompt: "使用 $handwritten-notes-to-markdown 将这些手写笔记或推导图片忠实转写为 Markdown。"
+
+policy:
+  allow_implicit_invocation: true
